@@ -1,12 +1,11 @@
-import { Sequelize, DataTypes } from "@sequelize/core";
-import { MySqlDialect } from "@sequelize/mysql";
+import { Sequelize, DataTypes } from "sequelize";
 import UserModel from "./user.js";
 import ExpenseModel from "./expense.js";
 
 const sequelize = new Sequelize({
-  dialect: MySqlDialect,
+  dialect: "mysql",
   database: "interview",
-  user: "chicken",
+  username: "chicken",
   password: "chicken",
   host: "localhost",
   port: 3300,
